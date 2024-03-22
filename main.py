@@ -27,7 +27,7 @@ def valid_guess(guess, file_path):
         words = [line.strip().upper() for line in file.readlines()]
         return guess in words
 
-def __main__():
+def run_game():
     word = pick_word("words.txt")
     msg = ""
     game_over = False
@@ -51,4 +51,4 @@ def __main__():
     print(msg)
 
 if __name__ == "__main__":
-    __main__()
+    run_game()
